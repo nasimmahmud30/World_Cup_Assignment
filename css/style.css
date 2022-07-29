@@ -4,11 +4,11 @@ body{
 }
 /* -------------Header Section-------------- */
 .container{
-    padding-left: 150px;
+    padding-left: 130px;
     padding-top: 50px;
 }
 .container-header{
-    width: 1200px;
+    width: 1250px;
     height: 700px;
     background-color: rgb(27, 26, 26);
     display: flex;
@@ -46,9 +46,13 @@ body{
 }
 
 /* ------------- Main Content -------------- */
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .content{
     display: grid;
-    grid-template-columns: repeat(2, 35%);
+    grid-template-columns: repeat(2, 1fr);
     padding-top: 120px;
     height: auto;
     width: 100%;
@@ -56,7 +60,7 @@ body{
 .main-content{
     height: 250px;
     width: 350px;
-    padding-left: 150px;
+    padding-left: 130px;
 }
 .btn-main-category{
     height: 250px;
@@ -76,6 +80,14 @@ body{
     border: none;
 
 }
+
+#btn-category1:hover {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
 .btn-category1{
     background-color: red;
     color: white;
@@ -88,15 +100,17 @@ body{
 
 .main-blog-images{
     display: grid;
-    grid-template-columns: repeat(3, 53%);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     height: 100%;
-    padding-right: 25px;
+    padding-right: 85px;
     border-radius: 20px;
+    padding-left: 40px;
 }
 .blog-image{
     border-radius: 10px;
     border: 2px solid rgb(241, 236, 236);
+    margin-right: 20px;
+        margin-bottom: 20px;
 }
 .blog-images{
     padding-bottom: 20px;
@@ -163,3 +177,64 @@ body{
     text-decoration: none;
     color: rgb(218, 210, 210);
 }
+/* New Blog */
+.new-blog {
+    text-decoration: none;
+    color: black;
+}
+
+#new-blog {
+    text-decoration: none;
+    color: white;
+}
+
+.new-blog1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding-left: 20px;
+
+}
+
+.new-blog-content {
+    border: 2px solid rgb(242, 240, 240);
+    height: 200px;
+    width: 250px;
+    padding-top: 30px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+
+.new-blog-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.new-blog-images img {
+    padding-right: 10px;
+}
+
+.new-blog-images p {
+    padding-top: 0px;
+    padding-left: 10px;
+    color: black;
+}
+
+.country h3 {
+    padding-top: 0px;
+    text-align: center;
+}
+
+.country p {
+    text-align: center;
+    color: rgb(91, 90, 90);
+
+}
+
+/*---------- Media Queries -------------*/
+
+/* Mobile Device */
+
+@media screen {}
