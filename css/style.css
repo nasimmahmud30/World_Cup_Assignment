@@ -177,6 +177,20 @@ body{
     text-decoration: none;
     color: rgb(218, 210, 210);
 }
+/* View all Button Css  */
+.view-button {
+    display: none;
+    height: 60px;
+    width: 220px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 18px;
+    background-color: red;
+    font-weight: 20px;
+    padding: 2px;
+    border: none;
+    color: white;
+}
 /* New Blog */
 .new-blog {
     text-decoration: none;
@@ -233,6 +247,82 @@ body{
 
 }
 
+/* social-media link css  */
+.social-media-link i {
+    padding: 0 20px;
+}
+
+.social-media-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.fa-brands {
+    color: white;
+}
 /*---------- Media Queries -------------*/
 
 /* Mobile Device */
+
+@media screen and (max-width: 600px) {
+    .container-header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-blog-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container1 {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    .btn-main-category {
+
+        display: flex;
+        height: 80px;
+        border-radius: 15px;
+        border-left: 10px;
+        padding-left: 10px;
+    }
+
+    .main-content {
+        display: block;
+        display: flex;
+    }
+
+
+
+
+
+}
+
+/* For tablet media query  */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-blog-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn-main-category {
+        background-color: white;
+        display: flex;
+        height: 100px;
+    }
+
+    .btn-main-category button {
+        border: 1px solid black;
+    }
+
+    .view-button {
+        display: block;
+        margin-left: 40%;
+        margin-top: 2%;
+    }
+}
